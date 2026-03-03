@@ -1,2 +1,11 @@
 name = input("What is your name? ")
 word = input("What is your favorite word? ")
+
+
+letterCount = {}
+
+for letter in word:
+    if letter in letterCount:
+        letterCount[letter] += 1
+    else:
+        letterCount[letter] = 1
