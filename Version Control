@@ -3,6 +3,8 @@ word = input("What is your favorite word? ")
 
 
 letterCount = {}
+mostCommon = ""
+highest = 0
 
 for letter in word:
     if letter in letterCount:
