@@ -11,3 +11,12 @@ for letter in word:
         letterCount[letter] += 1
     else:
         letterCount[letter] = 1
+
+for letter in letterCount:
+    if letterCount[letter] > highest:
+        highest = letterCount[letter]
+        mostCommon = letter
+
+print(f"Good Afternoon, {name}!")
+print(f"The word {word}, has {len(word)} letters.")
+print(f"The letter '{mostCommon}' appeared the most times ({highest} times).")
